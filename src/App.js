@@ -49,12 +49,16 @@ function App() {
         <Alert alert={alert} />
         <div className="container my-3">
           <Routes>
-            <Route path='/React-app' exact='true' element={<TextForm showAlert={showAlert} heading="Try TextUtils - Word Counter, Character Counter,
+            <Route path='/' exact='true' element={<TextForm showAlert={showAlert} heading="Try TextUtils - Word Counter, Character Counter,
                      Remove extra Spaces" mode={mode} />}></Route>
             <Route path='/about' element={<About mode={mode}></About>}></Route>
           </Routes>
         </div>
       </BrowserRouter>
+
+      {/* "predeploy": "npm run build",
+    "deploy": "gh-pages -d build", */}
+
     </>
   );
 }
